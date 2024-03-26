@@ -1,5 +1,6 @@
 ## SkyGoals Project 
 
+### Signup
 ```https
   POST /signup
 ```
@@ -13,6 +14,8 @@
 | `password` | `String` | **Required** |
 
 
+### Login
+
 ```https
   POST /login
 ```
@@ -21,6 +24,7 @@
 | `email` | `Email` | **Required**. Unique |
 | `password` | `String` | **Required** |
 
+### Get UserData
 ```https
   GET /userData
 ```
@@ -29,6 +33,8 @@
 | `isLogin` | `Validation` |  |
 | `userId ` | `ID` | from the cookies |
 
+
+### Get User with Spific Age
 ```https
   GET /userWithAge?age=number
 ```
@@ -39,6 +45,7 @@
 | `Age ` | `Number` |  **Required** |
 
 
+### Private Route For Getting All The Users Data
 ```https
   GET /privateroute
 ```
